@@ -1,26 +1,26 @@
 #include "pch.h"
 #include "Book.h"
 
-std::string Book::getTitle()
+std::string Book::getTitle() const
 {
 	return title;
 }
 
-std::string Book::getAuthor()
+std::string Book::getAuthor() const
 {
 	return author;
 }
 
-std::string Book::getLink()
+std::string Book::getLink() const
 {
 	return link;
 }
 
-Book::Book(std::string bookTitle, std::string bookAuthor, std::string bookLink)
+Book::Book(std::string& title, std::string& author, std::string& link)
 {
-	title = bookTitle;
-	author = bookAuthor;
-	link = bookLink;
+	this->title = title;
+	this->author = author;
+	this->link = link;
 }
 
 Book::Book()

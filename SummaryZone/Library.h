@@ -1,18 +1,19 @@
 #pragma once
 #include "Book.h"
+
 class Library
 {
 private:
 	std::multimap<std::string, Book> booksByTitle;
 	std::multimap<std::string, Book> booksByAuthor;
 public:
-	void addBook(std::string title, std::string author, std::string link);
-	void removeBook(std::string title, std::string author);
+	void addBook(const std::string& title, const std::string& author, const std::string& link);
+	void removeBook(const std::string& title);
 	void removeAll();
-	void playBook(std::string title);
-	void playRandom();
-	void showByTitle();
-	void showByBook();
+	void playBook(const std::string& title, const std::string& author) const;
+	void playRandom() const;
+	void showByTitle() const;
+	void showByBook() const;
 	Library();
 	~Library();
 };

@@ -7,10 +7,10 @@ private:
 	std::string author;
 	std::string link;
 public:
-	std::string getTitle();
-	std::string getAuthor();
-	std::string getLink();
-	Book(std::string bookTitle, std::string bookAuthor, std::string bookLink);
+	std::string getTitle() const;
+	std::string getAuthor() const;
+	std::string getLink() const;
+	Book(std::string& title, std::string& author, std::string& link);
 	Book();
 	~Book();
 };

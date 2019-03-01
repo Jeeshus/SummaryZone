@@ -1,12 +1,11 @@
 #include "pch.h"
 #include "Library.h"
 
-
-void Library::addBook(std::string title, std::string author, std::string link)
+void Library::addBook(const std::string& title, const std::string& author, const std::string& link)
 {
 }
 
-void Library::removeBook(std::string title, std::string author)
+void Library::removeBook(const std::string& title)
 {
 }
 
@@ -14,19 +13,19 @@ void Library::removeAll()
 {
 }
 
-void Library::playBook(std::string title)
+void Library::playBook(const std::string& title, const std::string& author) const
 {
 }
 
-void Library::playRandom()
+void Library::playRandom() const
 {
 }
 
-void Library::showByTitle()
+void Library::showByTitle() const
 {
 }
 
-void Library::showByBook()
+void Library::showByBook() const
 {
 }
 
