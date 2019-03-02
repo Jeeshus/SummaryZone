@@ -5,7 +5,7 @@ void Library::addBook(const std::string& title, const std::string& author, const
 {
 }
 
-void Library::removeBook(const std::string& title)
+void Library::removeBook(const std::string& title, const std::string& author)
 {
 }
 

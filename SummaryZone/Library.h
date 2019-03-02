@@ -8,7 +8,7 @@ private:
 	std::multimap<std::string, Book> booksByAuthor;
 public:
 	void addBook(const std::string& title, const std::string& author, const std::string& link);
-	void removeBook(const std::string& title);
+	void removeBook(const std::string& title, const std::string& author);
 	void removeAll();
 	void playBook(const std::string& title, const std::string& author) const;
 	void playRandom() const;
